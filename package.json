@@ -1,0 +1,17 @@
+{
+  "name": "emoji-random",
+  "description": "Creates a random emoji string. This is as useless as it gets.",
+  "homepage": "https://github.com/bevacqua/node-emoji-random",
+  "author": {
+    "name": "Nicolas Bevacqua",
+    "email": "ng@bevacqua.io",
+    "url": "http://bevacqua.io"
+  },
+  "version": "0.1.0",
+  "engines": {
+    "node": "*",
+    "npm": "1.2.x"
+  },
+  "dependencies": {
+  }
+}
