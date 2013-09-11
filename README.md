@@ -12,7 +12,7 @@ npm install emoji-random
 ## Use
 
 ```js
-var emoji = require('emoji');
+var emoji = require('emoji-random');
 
 console.log(emoji.random());
 ```
