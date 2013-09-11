@@ -7,4 +7,4 @@ module.exports = {
     random: function(){
         return emoji.names[Math.floor(Math.random()*len)];
     }
-}
+};
