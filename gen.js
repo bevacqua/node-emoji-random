@@ -13,7 +13,8 @@ async.eachSeries(emoji.names, function(name, next){
 
     git.on('close', function(){
         git = sp('git', ['commit', '-am', name + ' looks awesome']);
-        // git.on('close', next);
-        console.log('then..');
+        git.on('close', function(){
+            console.log('then..');
+        });
     });
 });
