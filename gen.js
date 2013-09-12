@@ -9,10 +9,10 @@ async.eachSeries(emoji.names, function(name, next){
 
     fs.writeFileSync(__dirname + '/all/' + name.replace(/:/g, ''), name);
 
-    var git = sp('git', ['add', '.']);
+    var git = sp('git', ['add', '.'], { stdio: 'inherit' });
 
     git.on('close', function(){
-        git = sp('git', ['commit', '-am', name + ' looks awesome']);
+        git = sp('git', ['commit', '-am', name + ' looks awesome'], { stdio: 'inherit' });
         git.on('close', next);
     });
 });
