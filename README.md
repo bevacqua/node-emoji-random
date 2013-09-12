@@ -17,4 +17,6 @@ var emoji = require('emoji-random');
 console.log(emoji.random());
 ```
 
-Keep trying until you get an `':octocat:'`.
+Keep trying until you get an :octocat: `':octocat:'`.
+
+Now with individual commits with each emoji!
