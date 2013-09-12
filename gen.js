@@ -8,6 +8,7 @@ var emoji = require('./emoji.json');
 async.eachSeries(emoji.names, function(name, next){
 
     fs.writeFileSync(__dirname + 'all' + name.replace(/:/, ''));
+
     var git = sp('git', ['add', '.']);
 
     git.on('close', function(){
