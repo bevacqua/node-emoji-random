@@ -12,7 +12,7 @@
     "node": "*",
     "npm": "1.2.x"
   },
-  "bin": "bin/emoji-random.js"
+  "bin": "bin/emoji-random.js",
   "dependencies": {},
   "devDependencies": {
     "async": "~0.2.9"
